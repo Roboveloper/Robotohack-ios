@@ -62,7 +62,7 @@
     [sender setBackgroundImage:[UIImage imageNamed:@"button-enabled.png"] forState:UIControlStateNormal];
     _activeButton = sender;
     
-    [self sentFormButtonWithTag:sender.tag];
+    [self sentFormButtonWithTag:(int) sender.tag];
 }
 
 - (void) sentFormButtonWithTag:(int)tag {
