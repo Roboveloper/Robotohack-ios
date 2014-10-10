@@ -20,5 +20,9 @@
 @property (strong, nonatomic) IBOutlet UIScrollView * scroll;
 @property (strong, nonatomic) IBOutlet UILabel * baterryLabel1;
 @property (strong, nonatomic) IBOutlet UILabel * baterryLabel2;
+@property (strong, nonatomic) IBOutlet UILabel * lockSplash;
+@property (strong, nonatomic) IBOutlet UISwitch * lockSwitch;
+
+- (IBAction) lockSwitchPressed:(id)sender;
 
 @end

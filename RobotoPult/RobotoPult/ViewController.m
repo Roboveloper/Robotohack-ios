@@ -24,6 +24,8 @@
     [super viewDidLoad];
     
     [self initButtons];
+    [_lockSwitch setOn:NO];
+    _lockSplash.alpha = 0;
 }
 
 - (void) didReceiveMemoryWarning {
@@ -71,6 +73,18 @@
     [ZhenyaConnection sendDictToZhenya:@{@"angle":angle, @"fignya":@"43215324645756723536546678798754523545797246287325672346578325783489573489567834657234657236786234765347"} completion:^(bool success, NSDictionary * result) {
         NSLog(@"Server returned: %@", result);
     }];
+}
+
+- (IBAction) lockSwitchPressed:(id)sender {
+    if ([_lockSwitch isOn]) {
+        _lockSplash.alpha = 1;
+        _scroll.userInteractionEnabled = NO;
+        [ZhenyaConnection sendDictToZhenya:@{@"action":@"lock"} completion:^(bool success, NSDictionary * result) { }];
+    } else {
+        _lockSplash.alpha = 0;
+        _scroll.userInteractionEnabled = YES;
+        [ZhenyaConnection sendDictToZhenya:@{@"action":@"unlock"} completion:^(bool success, NSDictionary * result) { }];
+    }
 }
 
 @end
