@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "GCDAsyncUdpSocket.h"
-#import "SBJson.h"
+#import "ZhenyaConnection.h"
+
+#define BUTTONS_COUNT 12
 
 @interface ViewController ()
 
@@ -33,7 +34,7 @@
 - (void) initButtons {
     float x = 5;
     float y = 5;
-    for (int i = 0; i <= 25; i++) {
+    for (int i = 0; i < BUTTONS_COUNT; i++) {
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(x, y, 100, 100);
         [button setBackgroundImage:[UIImage imageNamed:@"button-disabled.png"] forState:UIControlStateNormal];
@@ -60,46 +61,15 @@
     }
     [sender setBackgroundImage:[UIImage imageNamed:@"button-enabled.png"] forState:UIControlStateNormal];
     _activeButton = sender;
+    
+    [self sentFormButtonWithTag:sender.tag];
 }
 
-- (IBAction) sendBtnPressed:(id)sender {
-    NSLog(@"sdghiljdfbkjdf");
+- (void) sentFormButtonWithTag:(int)tag {
+    NSString * angle = [NSString stringWithFormat:@"%f", ((float) tag / (float) (BUTTONS_COUNT - 1))];
     
-    GCDAsyncUdpSocket * udpSocket;
-    udpSocket = [[GCDAsyncUdpSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
-    
-    NSData * data = [[NSString stringWithFormat:@"Hello Wold"] dataUsingEncoding:NSUTF8StringEncoding];
-                    
-    [udpSocket sendData:data toHost:@"192.168.10.111" port:550 withTimeout:-1 tag:1];
-}
-
-- (void) sendPostRequest:(NSString *)function
-                   token:(NSString *)token
-                    dict:(NSDictionary *)dict
-              completion:(void (^)(bool success, NSDictionary * result))completionBlock
-{
-    NSString * jsonString = [dict JSONRepresentation];
-    NSMutableData * jsonData = [NSMutableData dataWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding]];
-    
-    NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@", @"dfb", function]];
-    NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:url];
-    [request setHTTPMethod:@"POST"];
-    [request setHTTPBody:jsonData];
-    [request addValue:@"application/json; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-    [request addValue:token forHTTPHeaderField:@"key"];
-    
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * response, NSData * data, NSError * connectionError) {
-        if (connectionError) {
-            completionBlock(NO, nil);
-        } else {
-            NSError * parseError;
-            NSDictionary * jsonResultDict = (NSDictionary *) [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&parseError];
-            if (parseError) {
-                completionBlock(NO, nil);
-            } else {completionBlock(YES, jsonResultDict);
-                
-            }
-        }
+    [ZhenyaConnection sendDictToZhenya:@{@"angle":angle, @"fignya":@"43215324645756723536546678798754523545797246287325672346578325783489573489567834657234657236786234765347"} completion:^(bool success, NSDictionary * result) {
+        NSLog(@"Server returned: %@", result);
     }];
 }
 

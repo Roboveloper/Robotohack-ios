@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97D36D8919E87C2600402794 /* ZhenyaConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D36D8819E87C2600402794 /* ZhenyaConnection.m */; };
 		D915151219E80D7D00185B64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D915151119E80D7D00185B64 /* main.m */; };
 		D915151519E80D7D00185B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D915151419E80D7D00185B64 /* AppDelegate.m */; };
 		D915151B19E80D7D00185B64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D915151919E80D7D00185B64 /* Main.storyboard */; };
@@ -75,6 +76,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97D36D8719E87C2600402794 /* ZhenyaConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhenyaConnection.h; sourceTree = "<group>"; };
+		97D36D8819E87C2600402794 /* ZhenyaConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhenyaConnection.m; sourceTree = "<group>"; };
 		D915150C19E80D7D00185B64 /* RobotoPult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotoPult.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D915151019E80D7D00185B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D915151119E80D7D00185B64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 				D9CB14B619E811A100556711 /* ViewController.h */,
 				D9CB14B719E811A100556711 /* ViewController.m */,
 				D9CB14B819E811A100556711 /* ViewController.xib */,
+				97D36D8719E87C2600402794 /* ZhenyaConnection.h */,
+				97D36D8819E87C2600402794 /* ZhenyaConnection.m */,
 				D915151919E80D7D00185B64 /* Main.storyboard */,
 				D915151C19E80D7D00185B64 /* Images.xcassets */,
 				D915151E19E80D7D00185B64 /* LaunchScreen.xib */,
@@ -547,6 +552,7 @@
 				D9CB165619E8141000556711 /* AsyncSocket.m in Sources */,
 				D9CB16D619E815BA00556711 /* SBJsonWriter.m in Sources */,
 				D9CB16CD19E815BA00556711 /* SBJsonStreamParser.m in Sources */,
+				97D36D8919E87C2600402794 /* ZhenyaConnection.m in Sources */,
 				D9CB16D319E815BA00556711 /* SBJsonStreamWriterState.m in Sources */,
 				D9CB16CB19E815BA00556711 /* NSObject+SBJson.m in Sources */,
 				D9CB167919E8141000556711 /* DDDispatchQueueLogFormatter.m in Sources */,
