@@ -10,7 +10,7 @@
 #import "ZhenyaConnection.h"
 #import "Defines.h"
 
-#define BUTTONS_COUNT 18
+#define BUTTONS_COUNT 15
 
 @interface ViewController ()
 
