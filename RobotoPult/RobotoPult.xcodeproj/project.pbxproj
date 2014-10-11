@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9751A3ED19E9163800F48973 /* hand-8921-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3DF19E9163800F48973 /* hand-8921-disabled@2x.png */; };
+		9751A3EE19E9163800F48973 /* hand-8921-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E019E9163800F48973 /* hand-8921-enabled@2x.png */; };
+		9751A3EF19E9163800F48973 /* hand-8925-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E119E9163800F48973 /* hand-8925-disabled@2x.png */; };
+		9751A3F019E9163800F48973 /* hand-8925-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E219E9163800F48973 /* hand-8925-enabled@2x.png */; };
+		9751A3F119E9163800F48973 /* hand-8926-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E319E9163800F48973 /* hand-8926-disabled@2x.png */; };
+		9751A3F219E9163800F48973 /* hand-8926-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E419E9163800F48973 /* hand-8926-enabled@2x.png */; };
+		9751A3F319E9163800F48973 /* hand-8931-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E519E9163800F48973 /* hand-8931-disabled@2x.png */; };
+		9751A3F419E9163800F48973 /* hand-8931-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E619E9163800F48973 /* hand-8931-enabled@2x.png */; };
+		9751A3F519E9163800F48973 /* hand-8935-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E719E9163800F48973 /* hand-8935-disabled@2x.png */; };
+		9751A3F619E9163800F48973 /* hand-8935-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E819E9163800F48973 /* hand-8935-enabled@2x.png */; };
+		9751A3F719E9163800F48973 /* hand-8948-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3E919E9163800F48973 /* hand-8948-disabled@2x.png */; };
+		9751A3F819E9163800F48973 /* hand-8948-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3EA19E9163800F48973 /* hand-8948-enabled@2x.png */; };
+		9751A3F919E9163800F48973 /* hand-8952-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3EB19E9163800F48973 /* hand-8952-disabled@2x.png */; };
+		9751A3FA19E9163800F48973 /* hand-8952-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3EC19E9163800F48973 /* hand-8952-enabled@2x.png */; };
+		9751A3FE19E916B400F48973 /* Defines.m in Sources */ = {isa = PBXBuildFile; fileRef = 9751A3FD19E916B400F48973 /* Defines.m */; };
+		9751A40119E91E3C00F48973 /* hand-8942-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A3FF19E91E3C00F48973 /* hand-8942-disabled@2x.png */; };
+		9751A40219E91E3C00F48973 /* hand-8942-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40019E91E3C00F48973 /* hand-8942-enabled@2x.png */; };
+		9751A40519E921F000F48973 /* hand-8900-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40319E921F000F48973 /* hand-8900-disabled@2x.png */; };
+		9751A40619E921F000F48973 /* hand-8900-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40419E921F000F48973 /* hand-8900-enabled@2x.png */; };
 		97D36D8919E87C2600402794 /* ZhenyaConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D36D8819E87C2600402794 /* ZhenyaConnection.m */; };
 		D915151219E80D7D00185B64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D915151119E80D7D00185B64 /* main.m */; };
 		D915151519E80D7D00185B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D915151419E80D7D00185B64 /* AppDelegate.m */; };
@@ -76,6 +95,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9751A3DF19E9163800F48973 /* hand-8921-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8921-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E019E9163800F48973 /* hand-8921-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8921-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E119E9163800F48973 /* hand-8925-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8925-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E219E9163800F48973 /* hand-8925-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8925-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E319E9163800F48973 /* hand-8926-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8926-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E419E9163800F48973 /* hand-8926-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8926-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E519E9163800F48973 /* hand-8931-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8931-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E619E9163800F48973 /* hand-8931-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8931-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E719E9163800F48973 /* hand-8935-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8935-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E819E9163800F48973 /* hand-8935-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8935-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A3E919E9163800F48973 /* hand-8948-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8948-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A3EA19E9163800F48973 /* hand-8948-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8948-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A3EB19E9163800F48973 /* hand-8952-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8952-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A3EC19E9163800F48973 /* hand-8952-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8952-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A3FC19E916B400F48973 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		9751A3FD19E916B400F48973 /* Defines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Defines.m; sourceTree = "<group>"; };
+		9751A3FF19E91E3C00F48973 /* hand-8942-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8942-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A40019E91E3C00F48973 /* hand-8942-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8942-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A40319E921F000F48973 /* hand-8900-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8900-disabled@2x.png"; sourceTree = "<group>"; };
+		9751A40419E921F000F48973 /* hand-8900-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8900-enabled@2x.png"; sourceTree = "<group>"; };
 		97D36D8719E87C2600402794 /* ZhenyaConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhenyaConnection.h; sourceTree = "<group>"; };
 		97D36D8819E87C2600402794 /* ZhenyaConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhenyaConnection.m; sourceTree = "<group>"; };
 		D915150C19E80D7D00185B64 /* RobotoPult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotoPult.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +224,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9751A3DE19E9163800F48973 /* Hands */ = {
+			isa = PBXGroup;
+			children = (
+				9751A40319E921F000F48973 /* hand-8900-disabled@2x.png */,
+				9751A40419E921F000F48973 /* hand-8900-enabled@2x.png */,
+				9751A3FF19E91E3C00F48973 /* hand-8942-disabled@2x.png */,
+				9751A40019E91E3C00F48973 /* hand-8942-enabled@2x.png */,
+				9751A3DF19E9163800F48973 /* hand-8921-disabled@2x.png */,
+				9751A3E019E9163800F48973 /* hand-8921-enabled@2x.png */,
+				9751A3E119E9163800F48973 /* hand-8925-disabled@2x.png */,
+				9751A3E219E9163800F48973 /* hand-8925-enabled@2x.png */,
+				9751A3E319E9163800F48973 /* hand-8926-disabled@2x.png */,
+				9751A3E419E9163800F48973 /* hand-8926-enabled@2x.png */,
+				9751A3E519E9163800F48973 /* hand-8931-disabled@2x.png */,
+				9751A3E619E9163800F48973 /* hand-8931-enabled@2x.png */,
+				9751A3E719E9163800F48973 /* hand-8935-disabled@2x.png */,
+				9751A3E819E9163800F48973 /* hand-8935-enabled@2x.png */,
+				9751A3E919E9163800F48973 /* hand-8948-disabled@2x.png */,
+				9751A3EA19E9163800F48973 /* hand-8948-enabled@2x.png */,
+				9751A3EB19E9163800F48973 /* hand-8952-disabled@2x.png */,
+				9751A3EC19E9163800F48973 /* hand-8952-enabled@2x.png */,
+			);
+			path = Hands;
+			sourceTree = "<group>";
+		};
 		D915150319E80D7D00185B64 = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +279,8 @@
 				D9CB14B819E811A100556711 /* ViewController.xib */,
 				97D36D8719E87C2600402794 /* ZhenyaConnection.h */,
 				97D36D8819E87C2600402794 /* ZhenyaConnection.m */,
+				9751A3FC19E916B400F48973 /* Defines.h */,
+				9751A3FD19E916B400F48973 /* Defines.m */,
 				D915151919E80D7D00185B64 /* Main.storyboard */,
 				D915151C19E80D7D00185B64 /* Images.xcassets */,
 				D915151E19E80D7D00185B64 /* LaunchScreen.xib */,
@@ -252,13 +318,14 @@
 		D915153519E80F9500185B64 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				9751A3DE19E9163800F48973 /* Hands */,
+				D915153619E80F9500185B64 /* Icons */,
 				D9CB16DF19E8389F00556711 /* bg.png */,
 				D9CB16E019E8389F00556711 /* bg@2x.png */,
 				D9CB16DB19E8303A00556711 /* button-disabled@2x.png */,
 				D9CB16DC19E8303A00556711 /* button-enabled@2x.png */,
 				D9CB16D719E82B7A00556711 /* baterry-bg@2x.png */,
 				D9CB16D819E82B7A00556711 /* baterry-energy@2x.png */,
-				D915153619E80F9500185B64 /* Icons */,
 			);
 			name = Resourses;
 			path = RobotoPult/Resourses;
@@ -486,28 +553,46 @@
 			files = (
 				D9CB16E119E8389F00556711 /* bg.png in Resources */,
 				D9CB16DA19E82B7A00556711 /* baterry-energy@2x.png in Resources */,
+				9751A3F319E9163800F48973 /* hand-8931-disabled@2x.png in Resources */,
 				D915154519E80F9500185B64 /* robod-100.png in Resources */,
+				9751A40619E921F000F48973 /* hand-8900-enabled@2x.png in Resources */,
+				9751A40519E921F000F48973 /* hand-8900-disabled@2x.png in Resources */,
 				D915151B19E80D7D00185B64 /* Main.storyboard in Resources */,
 				D915154719E80F9500185B64 /* robod-120.png in Resources */,
+				9751A3F419E9163800F48973 /* hand-8931-enabled@2x.png in Resources */,
 				D9CB16DD19E8303A00556711 /* button-disabled@2x.png in Resources */,
+				9751A3EE19E9163800F48973 /* hand-8921-enabled@2x.png in Resources */,
+				9751A3EF19E9163800F48973 /* hand-8925-disabled@2x.png in Resources */,
 				D915154C19E80F9500185B64 /* robod-50.png in Resources */,
+				9751A3F919E9163800F48973 /* hand-8952-disabled@2x.png in Resources */,
+				9751A3ED19E9163800F48973 /* hand-8921-disabled@2x.png in Resources */,
 				D915154919E80F9500185B64 /* robod-152.png in Resources */,
+				9751A3F619E9163800F48973 /* hand-8935-enabled@2x.png in Resources */,
 				D915154B19E80F9500185B64 /* robod-40.png in Resources */,
 				D9CB16E219E8389F00556711 /* bg@2x.png in Resources */,
 				D915154F19E80F9500185B64 /* robod-60.png in Resources */,
+				9751A3F519E9163800F48973 /* hand-8935-disabled@2x.png in Resources */,
+				9751A3FA19E9163800F48973 /* hand-8952-enabled@2x.png in Resources */,
+				9751A40219E91E3C00F48973 /* hand-8942-enabled@2x.png in Resources */,
 				D915154D19E80F9500185B64 /* robod-57.png in Resources */,
 				D915155219E80F9500185B64 /* robod-80.png in Resources */,
 				D915152019E80D7D00185B64 /* LaunchScreen.xib in Resources */,
 				D9CB16DE19E8303A00556711 /* button-enabled@2x.png in Resources */,
 				D9CB14BA19E811A100556711 /* ViewController.xib in Resources */,
 				D915155019E80F9500185B64 /* robod-72.png in Resources */,
+				9751A40119E91E3C00F48973 /* hand-8942-disabled@2x.png in Resources */,
 				D915151D19E80D7D00185B64 /* Images.xcassets in Resources */,
 				D915154A19E80F9500185B64 /* robod-29.png in Resources */,
+				9751A3F019E9163800F48973 /* hand-8925-enabled@2x.png in Resources */,
 				D915154619E80F9500185B64 /* robod-114.png in Resources */,
+				9751A3F219E9163800F48973 /* hand-8926-enabled@2x.png in Resources */,
 				D915154819E80F9500185B64 /* robod-144.png in Resources */,
 				D915154E19E80F9500185B64 /* robod-58.png in Resources */,
 				D9CB15FD19E8141000556711 /* Documentation.html in Resources */,
+				9751A3F719E9163800F48973 /* hand-8948-disabled@2x.png in Resources */,
 				D9CB167B19E8141000556711 /* README.txt in Resources */,
+				9751A3F119E9163800F48973 /* hand-8926-disabled@2x.png in Resources */,
+				9751A3F819E9163800F48973 /* hand-8948-enabled@2x.png in Resources */,
 				D915155119E80F9500185B64 /* robod-76.png in Resources */,
 				D9CB165819E8141000556711 /* Documentation.html in Resources */,
 				D9CB16D919E82B7A00556711 /* baterry-bg@2x.png in Resources */,
@@ -548,6 +633,7 @@
 				D9CB16D419E815BA00556711 /* SBJsonTokeniser.m in Sources */,
 				D9CB167619E8141000556711 /* DDLog.m in Sources */,
 				D9CB167719E8141000556711 /* DDTTYLogger.m in Sources */,
+				9751A3FE19E916B400F48973 /* Defines.m in Sources */,
 				D9CB167A19E8141000556711 /* DDMultiFormatter.m in Sources */,
 				D9CB165619E8141000556711 /* AsyncSocket.m in Sources */,
 				D9CB16D619E815BA00556711 /* SBJsonWriter.m in Sources */,

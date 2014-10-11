@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "ZhenyaConnection.h"
+#import "Defines.h"
 
 #define BUTTONS_COUNT 18
 
 @interface ViewController ()
 
 @property (nonatomic, strong) UIButton * activeButton;
+
+@property (strong, nonatomic) NSArray * handIndexes;
 
 @end
 
@@ -34,14 +37,21 @@
 }
 
 - (void) initButtons {
+    _handIndexes = [Defines getHandIndexes];
+
     float x = 5;
     float y = 5;
     for (int i = 0; i < BUTTONS_COUNT; i++) {
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame = CGRectMake(x, y, 100, 100);
-        [button setBackgroundImage:[UIImage imageNamed:@"button-disabled.png"] forState:UIControlStateNormal];
-        [button setTitle:[NSString stringWithFormat:@"%i", i] forState:UIControlStateNormal];
-        button.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:40];
+        if (_handIndexes.count > i) {
+            NSString * imageName = [NSString stringWithFormat:@"hand-%@-disabled.png", _handIndexes[i]];
+            [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        } else {
+            [button setBackgroundImage:[UIImage imageNamed:@"button-disabled.png"] forState:UIControlStateNormal];
+            [button setTitle:[NSString stringWithFormat:@"%i", i] forState:UIControlStateNormal];
+            button.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:40];
+        }
         button.titleLabel.textColor = [UIColor blackColor];
         [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchDown];
         button.tag = i;
@@ -58,10 +68,22 @@
 
 - (IBAction) buttonTapped:(UIButton *)sender {
     if (_activeButton) {
-        [_activeButton setBackgroundImage:[UIImage imageNamed:@"button-disabled.png"] forState:UIControlStateNormal];
+        if (_handIndexes.count > _activeButton.tag) {
+            NSString * imageName = [NSString stringWithFormat:@"hand-%@-disabled.png", _handIndexes[_activeButton.tag]];
+            [_activeButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+        } else {
+            [_activeButton setBackgroundImage:[UIImage imageNamed:@"button-disabled.png"] forState:UIControlStateNormal];
+        }
         _activeButton.titleLabel.textColor = [UIColor blackColor];
     }
-    [sender setBackgroundImage:[UIImage imageNamed:@"button-enabled.png"] forState:UIControlStateNormal];
+    
+    if (_handIndexes.count > sender.tag) {
+        NSString * imageName = [NSString stringWithFormat:@"hand-%@-enabled.png", _handIndexes[sender.tag]];
+        [sender setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    } else {
+        [sender setBackgroundImage:[UIImage imageNamed:@"button-enabled.png"] forState:UIControlStateNormal];
+    }
+    _activeButton.titleLabel.textColor = [UIColor blackColor];
     _activeButton = sender;
     
     [self sentFormButtonWithTag:(int) sender.tag];
