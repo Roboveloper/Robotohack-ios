@@ -90,11 +90,9 @@
 }
 
 - (void) sentFormButtonWithTag:(int)tag {
-    NSString * angle = [NSString stringWithFormat:@"%f", ((float) tag / (float) (BUTTONS_COUNT - 1))];
+//    NSString * angle = [NSString stringWithFormat:@"%f", ((float) tag / (float) (BUTTONS_COUNT - 1))];
     
-    [ZhenyaConnection sendDictToZhenya:@{@"angle":angle,
-                                         @"tag":[NSString stringWithFormat:@"%i", tag],
-                                         @"fignya":@"43215324645756723536546678798754523545797246287325672346578325783489573489567834657234657236786234765347"}
+    [ZhenyaConnection sendDictToZhenya:@{@"mode":[NSString stringWithFormat:@"%i", tag]}
                             completion:^(bool success, NSDictionary * result) {
         NSLog(@"Server returned: %@", result);
     }];
@@ -114,9 +112,9 @@
 
 - (IBAction) learnSwitchPressed:(id)sender {
     if ([_learnSwitch isOn]) {
-        [ZhenyaConnection sendDictToZhenya:@{@"learn":@"true"} completion:^(bool success, NSDictionary * result) { }];
+        [ZhenyaConnection sendDictToZhenya:@{@"virtual":@"true"} completion:^(bool success, NSDictionary * result) { }];
     } else {
-        [ZhenyaConnection sendDictToZhenya:@{@"learn":@"false"} completion:^(bool success, NSDictionary * result) { }];
+        [ZhenyaConnection sendDictToZhenya:@{@"virtual":@"false"} completion:^(bool success, NSDictionary * result) { }];
     }
 }
 
