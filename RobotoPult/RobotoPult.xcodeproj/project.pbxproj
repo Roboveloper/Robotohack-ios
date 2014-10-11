@@ -28,6 +28,8 @@
 		9751A40619E921F000F48973 /* hand-8900-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40419E921F000F48973 /* hand-8900-enabled@2x.png */; };
 		9751A40919E92A1D00F48973 /* hand-0000-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40719E92A1D00F48973 /* hand-0000-disabled@2x.png */; };
 		9751A40A19E92A1D00F48973 /* hand-0000-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40819E92A1D00F48973 /* hand-0000-enabled@2x.png */; };
+		9751A40D19E934DA00F48973 /* baterry-bg-foot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40B19E934DA00F48973 /* baterry-bg-foot@2x.png */; };
+		9751A40E19E934DA00F48973 /* baterry-bg-hand@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9751A40C19E934DA00F48973 /* baterry-bg-hand@2x.png */; };
 		97D36D8919E87C2600402794 /* ZhenyaConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D36D8819E87C2600402794 /* ZhenyaConnection.m */; };
 		D915151219E80D7D00185B64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D915151119E80D7D00185B64 /* main.m */; };
 		D915151519E80D7D00185B64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D915151419E80D7D00185B64 /* AppDelegate.m */; };
@@ -119,6 +121,8 @@
 		9751A40419E921F000F48973 /* hand-8900-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-8900-enabled@2x.png"; sourceTree = "<group>"; };
 		9751A40719E92A1D00F48973 /* hand-0000-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-0000-disabled@2x.png"; sourceTree = "<group>"; };
 		9751A40819E92A1D00F48973 /* hand-0000-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hand-0000-enabled@2x.png"; sourceTree = "<group>"; };
+		9751A40B19E934DA00F48973 /* baterry-bg-foot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baterry-bg-foot@2x.png"; sourceTree = "<group>"; };
+		9751A40C19E934DA00F48973 /* baterry-bg-hand@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "baterry-bg-hand@2x.png"; sourceTree = "<group>"; };
 		97D36D8719E87C2600402794 /* ZhenyaConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhenyaConnection.h; sourceTree = "<group>"; };
 		97D36D8819E87C2600402794 /* ZhenyaConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhenyaConnection.m; sourceTree = "<group>"; };
 		D915150C19E80D7D00185B64 /* RobotoPult.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotoPult.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -326,6 +330,8 @@
 			children = (
 				9751A3DE19E9163800F48973 /* Hands */,
 				D915153619E80F9500185B64 /* Icons */,
+				9751A40B19E934DA00F48973 /* baterry-bg-foot@2x.png */,
+				9751A40C19E934DA00F48973 /* baterry-bg-hand@2x.png */,
 				D9CB16DF19E8389F00556711 /* bg.png */,
 				D9CB16E019E8389F00556711 /* bg@2x.png */,
 				D9CB16DB19E8303A00556711 /* button-disabled@2x.png */,
@@ -580,6 +586,7 @@
 				D9CB16E219E8389F00556711 /* bg@2x.png in Resources */,
 				D915154F19E80F9500185B64 /* robod-60.png in Resources */,
 				9751A3F519E9163800F48973 /* hand-8935-disabled@2x.png in Resources */,
+				9751A40D19E934DA00F48973 /* baterry-bg-foot@2x.png in Resources */,
 				9751A3FA19E9163800F48973 /* hand-8952-enabled@2x.png in Resources */,
 				9751A40219E91E3C00F48973 /* hand-8942-enabled@2x.png in Resources */,
 				D915154D19E80F9500185B64 /* robod-57.png in Resources */,
@@ -590,6 +597,7 @@
 				D915155019E80F9500185B64 /* robod-72.png in Resources */,
 				9751A40119E91E3C00F48973 /* hand-8942-disabled@2x.png in Resources */,
 				D915151D19E80D7D00185B64 /* Images.xcassets in Resources */,
+				9751A40E19E934DA00F48973 /* baterry-bg-hand@2x.png in Resources */,
 				D915154A19E80F9500185B64 /* robod-29.png in Resources */,
 				9751A3F019E9163800F48973 /* hand-8925-enabled@2x.png in Resources */,
 				D915154619E80F9500185B64 /* robod-114.png in Resources */,

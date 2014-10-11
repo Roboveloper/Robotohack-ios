@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
@@ -8,10 +9,6 @@
             <connections>
                 <outlet property="baterryEnergy2" destination="zn9-PS-3s1" id="faf-Ok-Z21"/>
                 <outlet property="baterryEnergy3" destination="gb5-BP-Eof" id="w86-3a-cVu"/>
-                <outlet property="baterryEnergy4" destination="9XS-ja-tYe" id="psD-e3-66K"/>
-                <outlet property="baterryEnergy5" destination="bWk-iI-aDY" id="QjB-MD-E4F"/>
-                <outlet property="baterryLabel" destination="35c-tX-Uyx" id="O67-UJ-MdR"/>
-                <outlet property="baterryLabel2" destination="35c-tX-Uyx" id="1Kt-bo-7be"/>
                 <outlet property="batteryBgImg" destination="mRG-QY-L7a" id="xdj-NH-lZM"/>
                 <outlet property="batteryEnergy1" destination="bfy-fJ-JgC" id="ISP-TX-9ex"/>
                 <outlet property="lockSplash" destination="6UB-49-XvV" id="sdF-Zv-1Gb"/>
@@ -29,61 +26,70 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-bg.png" id="mRG-QY-L7a">
-                    <rect key="frame" x="14" y="29" width="86" height="44"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-bg-hand.png" id="mRG-QY-L7a">
+                    <rect key="frame" x="14" y="25" width="140" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-bg-foot.png" id="iFV-wV-EHV">
+                    <rect key="frame" x="168" y="25" width="140" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="bfy-fJ-JgC">
-                    <rect key="frame" x="22" y="29" width="13" height="44"/>
+                    <rect key="frame" x="56" y="25" width="13" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="1hF-ua-SfK">
+                    <rect key="frame" x="210" y="25" width="13" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="SQA-BU-TDG">
+                    <rect key="frame" x="223" y="25" width="13" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="nk9-JY-07F">
+                    <rect key="frame" x="236" y="25" width="13" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="zn9-PS-3s1">
-                    <rect key="frame" x="35" y="29" width="13" height="44"/>
+                    <rect key="frame" x="69" y="25" width="13" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="gb5-BP-Eof">
-                    <rect key="frame" x="48" y="29" width="13" height="44"/>
+                    <rect key="frame" x="82" y="25" width="13" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="9XS-ja-tYe">
-                    <rect key="frame" x="61" y="29" width="13" height="44"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="Oj8-jb-YZT">
+                    <rect key="frame" x="95" y="25" width="13" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="bWk-iI-aDY">
-                    <rect key="frame" x="74" y="29" width="13" height="44"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baterry-energy.png" id="rdf-64-cvD">
+                    <rect key="frame" x="108" y="25" width="13" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8pc-qd-nmW">
-                    <rect key="frame" x="0.0" y="104" width="320" height="464"/>
+                    <rect key="frame" x="0.0" y="118" width="320" height="450"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </scrollView>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="fCE-zv-PsM">
-                    <rect key="frame" x="253" y="35" width="51" height="31"/>
+                    <rect key="frame" x="256" y="80" width="51" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="lockSwitchPressed:" destination="-1" eventType="valueChanged" id="ieu-Wb-7UU"/>
                     </connections>
                 </switch>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCK" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OaP-JB-6CM">
-                    <rect key="frame" x="200" y="40" width="50" height="21"/>
+                    <rect key="frame" x="203" y="84" width="50" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCKED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6UB-49-XvV">
-                    <rect key="frame" x="0.0" y="104" width="320" height="464"/>
+                    <rect key="frame" x="0.0" y="118" width="320" height="450"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.74814666970802923" alpha="0.75" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="129 лет 4 часа" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="35c-tX-Uyx">
-                    <rect key="frame" x="14" y="76" width="219" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                    <color key="textColor" red="0.078431372549019607" green="0.78431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -92,7 +98,8 @@
         </view>
     </objects>
     <resources>
-        <image name="baterry-bg.png" width="86" height="44"/>
+        <image name="baterry-bg-foot.png" width="140" height="44"/>
+        <image name="baterry-bg-hand.png" width="140" height="44"/>
         <image name="baterry-energy.png" width="13" height="44"/>
         <image name="bg.png" width="320" height="568"/>
     </resources>
