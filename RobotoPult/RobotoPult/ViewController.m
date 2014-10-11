@@ -48,7 +48,7 @@
             NSString * imageName = [NSString stringWithFormat:@"hand-%@-disabled.png", _handIndexes[i]];
             [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         } else {
-            [button setBackgroundImage:[UIImage imageNamed:@"button-disabled.png"] forState:UIControlStateNormal];
+            [button setBackgroundImage:[UIImage imageNamed:@"hand-0000-disabled.png"] forState:UIControlStateNormal];
             [button setTitle:[NSString stringWithFormat:@"%i", i] forState:UIControlStateNormal];
             button.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:40];
         }
@@ -72,7 +72,7 @@
             NSString * imageName = [NSString stringWithFormat:@"hand-%@-disabled.png", _handIndexes[_activeButton.tag]];
             [_activeButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         } else {
-            [_activeButton setBackgroundImage:[UIImage imageNamed:@"button-disabled.png"] forState:UIControlStateNormal];
+            [_activeButton setBackgroundImage:[UIImage imageNamed:@"hand-0000-disabled.png"] forState:UIControlStateNormal];
         }
         _activeButton.titleLabel.textColor = [UIColor blackColor];
     }
@@ -81,7 +81,7 @@
         NSString * imageName = [NSString stringWithFormat:@"hand-%@-enabled.png", _handIndexes[sender.tag]];
         [sender setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     } else {
-        [sender setBackgroundImage:[UIImage imageNamed:@"button-enabled.png"] forState:UIControlStateNormal];
+        [sender setBackgroundImage:[UIImage imageNamed:@"hand-0000-enabled.png"] forState:UIControlStateNormal];
     }
     _activeButton.titleLabel.textColor = [UIColor blackColor];
     _activeButton = sender;
