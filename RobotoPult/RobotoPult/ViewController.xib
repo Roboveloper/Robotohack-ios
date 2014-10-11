@@ -11,6 +11,7 @@
                 <outlet property="baterryEnergy3" destination="gb5-BP-Eof" id="w86-3a-cVu"/>
                 <outlet property="batteryBgImg" destination="mRG-QY-L7a" id="xdj-NH-lZM"/>
                 <outlet property="batteryEnergy1" destination="bfy-fJ-JgC" id="ISP-TX-9ex"/>
+                <outlet property="learnSwitch" destination="DZz-31-UDS" id="Pxu-Kd-gUQ"/>
                 <outlet property="lockSplash" destination="6UB-49-XvV" id="sdF-Zv-1Gb"/>
                 <outlet property="lockSwitch" destination="fCE-zv-PsM" id="tb5-HQ-oLv"/>
                 <outlet property="scroll" destination="8pc-qd-nmW" id="uNv-rK-WqC"/>
@@ -71,14 +72,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </scrollView>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="fCE-zv-PsM">
-                    <rect key="frame" x="256" y="80" width="51" height="31"/>
+                    <rect key="frame" x="168" y="80" width="51" height="31"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <connections>
                         <action selector="lockSwitchPressed:" destination="-1" eventType="valueChanged" id="ieu-Wb-7UU"/>
                     </connections>
                 </switch>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCK" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OaP-JB-6CM">
-                    <rect key="frame" x="203" y="84" width="50" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEARN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cy8-Ee-TMz">
+                    <rect key="frame" x="71" y="84" width="75" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,6 +90,20 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="0.74814666970802923" alpha="0.75" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="50"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="DZz-31-UDS">
+                    <rect key="frame" x="14" y="80" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="learnSwitchPressed:" destination="-1" eventType="valueChanged" id="kAK-v8-u3P"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOCK" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OaP-JB-6CM">
+                    <rect key="frame" x="226" y="84" width="50" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>

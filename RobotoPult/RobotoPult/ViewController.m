@@ -92,7 +92,10 @@
 - (void) sentFormButtonWithTag:(int)tag {
     NSString * angle = [NSString stringWithFormat:@"%f", ((float) tag / (float) (BUTTONS_COUNT - 1))];
     
-    [ZhenyaConnection sendDictToZhenya:@{@"angle":angle, @"fignya":@"43215324645756723536546678798754523545797246287325672346578325783489573489567834657234657236786234765347"} completion:^(bool success, NSDictionary * result) {
+    [ZhenyaConnection sendDictToZhenya:@{@"angle":angle,
+                                         @"tag":[NSString stringWithFormat:@"%i", tag],
+                                         @"fignya":@"43215324645756723536546678798754523545797246287325672346578325783489573489567834657234657236786234765347"}
+                            completion:^(bool success, NSDictionary * result) {
         NSLog(@"Server returned: %@", result);
     }];
 }
@@ -106,6 +109,14 @@
         _lockSplash.alpha = 0;
         _scroll.userInteractionEnabled = YES;
         [ZhenyaConnection sendDictToZhenya:@{@"action":@"unlock"} completion:^(bool success, NSDictionary * result) { }];
+    }
+}
+
+- (IBAction) learnSwitchPressed:(id)sender {
+    if ([_learnSwitch isOn]) {
+        [ZhenyaConnection sendDictToZhenya:@{@"learn":@"true"} completion:^(bool success, NSDictionary * result) { }];
+    } else {
+        [ZhenyaConnection sendDictToZhenya:@{@"learn":@"false"} completion:^(bool success, NSDictionary * result) { }];
     }
 }
 

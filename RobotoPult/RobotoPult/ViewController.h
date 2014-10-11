@@ -22,7 +22,9 @@
 @property (strong, nonatomic) IBOutlet UILabel * baterryLabel2;
 @property (strong, nonatomic) IBOutlet UILabel * lockSplash;
 @property (strong, nonatomic) IBOutlet UISwitch * lockSwitch;
+@property (strong, nonatomic) IBOutlet UISwitch * learnSwitch;
 
 - (IBAction) lockSwitchPressed:(id)sender;
+- (IBAction) learnSwitchPressed:(id)sender;
 
 @end
